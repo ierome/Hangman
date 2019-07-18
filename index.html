@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+        <div id="guessedLetters">
+            <h1>Guessed Letters:</h1>
+        </div>
+    <div id="score"></div>
+        <div id="guessWrap">
+            <form>
+            <button id="guess">Guess</button>
+            <input type="text" placeholder="One Letter" id="guessForm" maxlength="1">
+        </form>
+        </div>
+        <div id="results">
+                <p class="invalid">Damn that shit was wrong! You suck</p>
+                <p class="success">Ohhh shit! I see you. Good Job!</p>
+                <p class="repeat">Come on bros. You can't guess the same letter twice</p>
+            </div>
+    <div id="wordDisplay"></div>
+    <div id="hangman" class="hangman">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 654">
+                <title>Hangman</title>
+                <g id="stand" class="stand">
+                    <rect y="611" width="495" height="43"/>
+                    <rect x="168" y="284" width="611" height="43" transform="translate(168 779) rotate(-90)"/>
+                    <rect x="162" width="291" height="43"/>
+                </g>
+                <g id="hangman-part-01" class="hangman-part rope">
+                    <line class="cls-1" x1="225" y1="108" x2="225" y2="43"/>
+                </g>
+                <g id="hangman-part-02" class="hangman-part head">
+                    <circle class="cls-1" cx="225" cy="165" r="57"/>
+                </g>
+                <g id="hangman-part-03" class="hangman-part body">
+                    <line class="cls-1" x1="225" y1="222" x2="225" y2="409"/>
+                </g>
+                <g id="hangman-part-04" class="hangman-part arms">
+                    <line class="cls-1" x1="225" y1="281" x2="123" y2="366"/>
+                    <line class="cls-1" x1="225" y1="281" x2="327" y2="366"/>
+                </g>
+                <g id="hangman-part-06" class="hangman-part legs">
+                    <line class="cls-1" x1="225" y1="409" x2="147" y2="544"/>
+                    <line class="cls-1" x1="225" y1="409" x2="303" y2="544"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="words.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

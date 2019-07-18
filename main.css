@@ -1,0 +1,65 @@
+#wordDisplay {
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+}
+.letter {
+    padding: 5px;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 700px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+#guess {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+#guessWrap {
+    display: flex;
+    justify-content: center;
+}
+#guessWrap input {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+}
+.invalid {
+    display: none;
+    color: red;
+}
+.success {
+    display: none;
+    color: green;
+}
+.repeat {
+    display: none;
+    color: red;
+}
+.cls-1{
+    fill: none;
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 10px;
+}
+
+.stand {
+fill: #000;
+}
+.hangman {
+    width: 25%;
+    margin: 45px auto 45px;
+}
+
+.hangman-part {
+    display: block;
+}
+.hide {
+    display: none;
+}
